@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · KALKAN</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root{--bg:#f7f8fa;--surface:#fff;--text:#12161f;--muted:#5a6472;--line:#e3e7ee;--blue:#0a63d6}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0b1020;--surface:#121a2e;--text:#eaf0fb;--muted:#93a0b5;--line:#222e4a;--blue:#5aa7ff}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 72px}
+  header{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+  .mark{width:34px;height:34px;border-radius:9px;background:var(--blue);flex:0 0 auto;
+        display:grid;place-items:center;color:#fff;font-weight:700;font-size:15px}
+  .brand{font-weight:700;letter-spacing:.2px}
+  .brand small{display:block;font-weight:400;color:var(--muted);font-size:12px;letter-spacing:0}
+  main{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px 26px 34px}
+  h1{font-size:26px;margin:0 0 6px}
+  h2{font-size:19px;margin:30px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
+  h3{font-size:16px;margin:20px 0 6px}
+  p{margin:10px 0}
+  ul{margin:10px 0;padding-left:22px}
+  li{margin:4px 0}
+  code{background:rgba(127,127,127,.14);padding:1px 5px;border-radius:5px;font-size:.9em}
+  a{color:var(--blue)}
+  hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+  table{border-collapse:collapse;width:100%;margin:12px 0;display:block;overflow-x:auto}
+  td{border:1px solid var(--line);padding:7px 10px;vertical-align:top}
+  nav{margin:22px 0 0;font-size:14px}
+  nav a{margin-right:16px}
+  footer{margin-top:26px;color:var(--muted);font-size:13px}
+  .todo{background:#ffb02022;border:1px solid #ffb020;border-radius:8px;padding:10px 12px;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">K</div>
+    <div class="brand">KALKAN<small>BUSATER YAZILIM A.Ş.</small></div>
+  </header>
+  <main>
+<h1>KALKAN — Privacy Policy</h1>
+<p><strong>Effective date:</strong> 11 August 2026 <strong>Controller:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>Contact:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye</p>
+<h2>The short version</h2>
+<p>&gt; <strong>Message content is processed on your device and is not transmitted to KALKAN.</strong></p>
+<p>KALKAN reads your messages only on your phone, to decide whether each one is spam. The text, the sender, any attachments, and anything you check with our tools stay on the device.</p>
+<p>KALKAN is <strong>not</strong> an offline-only app. It downloads a signed threat-intelligence database, and it verifies purchases with our billing service. Neither of those requests carries your message data. The details are below.</p>
+<h2>1. What we process, and where</h2>
+<table><tbody>
+<tr><td>Data</td><td>Where it is processed</td><td>Leaves your device?</td></tr>
+<tr><td>SMS content</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>MMS content and attachments</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>Sender / recipient numbers</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>A link you check with Link Check</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>A number you check with Number Check</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>One-time codes (OTP)</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>Quarantined messages</td><td>On device (<code>filesDir</code>)</td><td><strong>No</strong></td></tr>
+<tr><td>Your allow/block lists</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>Activity counters</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>Contacts</td><td><strong>Not accessed at all</strong></td><td>—</td></tr>
+</tbody></table>
+<p>We do not operate a server that receives message content. There is no endpoint you could send it to even if you wanted to.</p>
+<h2>2. Network requests KALKAN makes</h2>
+<h3>2.1 Threat intelligence download</h3>
+<p>KALKAN periodically downloads a signed database of spam rules, a local model and known fraud numbers. This is a plain <code>GET</code>. It carries <strong>no query parameters, no request body, no cookies, no device identifier and no account identifier</strong>. We cannot tell who downloaded what.</p>
+<h3>2.2 Purchase verification</h3>
+<p>If you buy KALKAN Pro, the app sends <strong>one field</strong> — the purchase token issued by Google Play — to our verification service, which asks Google whether that purchase is valid. The service rejects any request containing additional fields. Your token is never written to logs in full.</p>
+<h3>2.3 Apple and Google</h3>
+<p>Purchases run through Apple's StoreKit or Google Play Billing. That traffic is between you and Apple/Google; we do not control it and cannot see its contents. It does not contain message data.</p>
+<h2>3. Android default SMS app</h2>
+<p>On Android, KALKAN asks to become your <strong>default SMS app</strong>. This is required by the operating system: only the default app can see an incoming message *before* it reaches your inbox, which is what makes real quarantine possible.</p>
+<p>While KALKAN holds this role it can read, write and send SMS/MMS on your device. If you remove the role, KALKAN immediately stops reading, writing and sending — this is enforced in code on every privileged call.</p>
+<h2>4. Notifications</h2>
+<p>Incoming-message notifications are generated on your device. Quarantine notifications deliberately <strong>do not show the message body</strong>.</p>
+<h2>5. Data retention and deletion</h2>
+<p>Everything is stored on your device. Uninstalling the app removes it. You can clear quarantine and your lists from inside the app at any time. Backup and device-transfer are disabled for KALKAN's data.</p>
+<h2>6. What we do not do</h2>
+<ul>
+<li>No advertising SDK</li>
+<li>No analytics or behavioural tracking SDK</li>
+<li>No crash-reporting SDK</li>
+<li>No attribution SDK</li>
+<li>No WebView</li>
+<li>No sale or sharing of personal data</li>
+</ul>
+<h2>7. Children</h2>
+<p>KALKAN is not directed at children under 13.</p>
+<h2>8. Your rights</h2>
+<p>Because we do not collect personal data on our servers, there is no account to access, correct or delete. For questions: the postal address above</p>
+<h2>9. Changes</h2>
+<p>Material changes will be announced in the app and at https://samettrm.github.io/kalkan/privacy/.</p>
+  </main>
+  <nav><a href="/kalkan/privacy/">Privacy</a><a href="/kalkan/terms/">Terms</a><a href="/kalkan/support/">Support</a><a href="/kalkan/support/tr/">Türkçe</a></nav>
+  <footer>© BUSATER YAZILIM A.Ş.</footer>
+</div>
+</body>
+</html>
