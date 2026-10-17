@@ -45,7 +45,7 @@
   </header>
   <main>
 <h1>KALKAN — Privacy Policy</h1>
-<p><strong>Effective date:</strong> 11 August 2026 <strong>Controller:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>Contact:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>Email:</strong> bsdigitalapp@gmail.com</p>
+<p><strong>Effective date:</strong> 11 August 2026 <strong>Last updated:</strong> 17 October 2026 <strong>Controller:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>Contact:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>Email:</strong> bsdigitalapp@gmail.com</p>
 <h2>The short version</h2>
 <p>&gt; <strong>Message content is processed on your device and is not transmitted to KALKAN.</strong></p>
 <p>KALKAN reads your messages only on your phone, to decide whether each one is spam. The text, the sender, any attachments, and anything you check with our tools stay on the device.</p>
@@ -59,7 +59,7 @@
 <tr><td>A link you check with Link Check</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>A number you check with Number Check</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>One-time codes (OTP)</td><td>On device</td><td><strong>No</strong></td></tr>
-<tr><td>Quarantined messages</td><td>On device (<code>filesDir</code>)</td><td><strong>No</strong></td></tr>
+<tr><td>Quarantined messages (Android)</td><td>On device, in your phone's system message storage (see §5)</td><td><strong>No</strong>, KALKAN does not send them</td></tr>
 <tr><td>Your allow/block lists</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>Activity counters</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>Contacts</td><td><strong>Not accessed at all</strong></td><td>—</td></tr>
@@ -78,7 +78,15 @@
 <h2>4. Notifications</h2>
 <p>Incoming-message notifications are generated on your device. Quarantine notifications deliberately <strong>do not show the message body</strong>.</p>
 <h2>5. Data retention and deletion</h2>
-<p>Everything is stored on your device. Uninstalling the app removes it. You can clear quarantine and your lists from inside the app at any time. Backup and device-transfer are disabled for KALKAN's data.</p>
+<p>KALKAN's own data (your allow/block lists, activity counters and settings) is stored only on your device. Uninstalling the app removes it, and backup and device-transfer are disabled for it. You can change your lists from inside the app at any time.</p>
+<p><strong>Messages work differently on Android.</strong> As your default SMS app, KALKAN saves every incoming message, including quarantined spam, to Android's system message storage. Quarantined messages are hidden from the KALKAN inbox and shown only in the Quarantine screen. That storage belongs to your phone, not to KALKAN, so:</p>
+<ul>
+<li>Uninstalling KALKAN or switching to another SMS app does <strong>not</strong> delete these messages. Another messaging app may show them.</li>
+<li>If your phone's own backup or device-transfer feature includes text messages (for example, a backup to your Google account), quarantined messages may be included like your other text messages. KALKAN does not control or receive these backups.</li>
+<li>If a message cannot be saved to system storage when it arrives (for example, because KALKAN has just lost the default SMS role), KALKAN keeps it in its own storage and moves it to system storage as soon as it can. The Quarantine screen labels these messages. If you uninstall KALKAN before they are moved, they are deleted.</li>
+<li>When KALKAN moves the quarantine of an earlier version into system storage, it keeps a copy of that earlier quarantine file in its own storage as a safety backup. That copy is never sent anywhere and is removed when you uninstall KALKAN. If you delete one of those messages, its copy is removed from the backup as well.</li>
+</ul>
+<p>You can permanently delete a quarantined message from the Quarantine screen; KALKAN asks for confirmation first.</p>
 <h2>6. What we do not do</h2>
 <ul>
 <li>No advertising SDK</li>

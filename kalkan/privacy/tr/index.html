@@ -45,7 +45,7 @@
   </header>
   <main>
 <h1>KALKAN — Gizlilik Politikası</h1>
-<p><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 <strong>Veri sorumlusu:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>İletişim:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>E-posta:</strong> bsdigitalapp@gmail.com</p>
+<p><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 <strong>Son güncelleme:</strong> 17 Ekim 2026 <strong>Veri sorumlusu:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>İletişim:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>E-posta:</strong> bsdigitalapp@gmail.com</p>
 <h2>Kısa hâli</h2>
 <p>&gt; <strong>Mesaj içeriği cihazınızda işlenir ve KALKAN'a iletilmez.</strong></p>
 <p>KALKAN mesajlarınızı yalnızca telefonunuzda okur ve her birinin spam olup olmadığına orada karar verir. Metin, gönderici, ekler ve araçlarımızla kontrol ettiğiniz her şey cihazda kalır.</p>
@@ -59,7 +59,7 @@
 <tr><td>Bağlantı Kontrolü ile denetlediğiniz adres</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Numara Kontrolü ile denetlediğiniz numara</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Tek kullanımlık kodlar (OTP)</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
-<tr><td>Karantinadaki mesajlar</td><td>Cihazda (<code>filesDir</code>)</td><td><strong>Hayır</strong></td></tr>
+<tr><td>Karantinadaki mesajlar (Android)</td><td>Cihazda, telefonunuzun sistem mesaj deposunda (bkz. §5)</td><td><strong>Hayır</strong>, KALKAN bunları göndermez</td></tr>
 <tr><td>İzin/engel listeleriniz</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Aktivite sayaçları</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Rehber</td><td><strong>Hiç erişilmiyor</strong></td><td>—</td></tr>
@@ -78,7 +78,15 @@
 <h2>4. Bildirimler</h2>
 <p>Gelen mesaj bildirimleri cihazınızda oluşturulur. Karantina bildirimleri <strong>mesaj gövdesini bilinçli olarak göstermez</strong>.</p>
 <h2>5. Saklama ve silme</h2>
-<p>Her şey cihazınızda saklanır. Uygulamayı kaldırmak verileri siler. Karantinayı ve listelerinizi istediğiniz zaman uygulama içinden temizleyebilirsiniz. KALKAN verileri için yedekleme ve cihaz aktarımı kapalıdır.</p>
+<p>KALKAN'ın kendi verileri (izin/engel listeleriniz, aktivite sayaçları ve ayarlar) yalnız cihazınızda saklanır. Uygulamayı kaldırmak bunları siler; bu veriler için yedekleme ve cihaz aktarımı kapalıdır. Listelerinizi istediğiniz zaman uygulama içinden değiştirebilirsiniz.</p>
+<p><strong>Android'de mesajlar farklıdır.</strong> KALKAN, varsayılan SMS uygulamanız olarak karantinaya alınan spam dahil gelen her mesajı Android'in sistem mesaj deposuna kaydeder. Karantinadaki mesajlar KALKAN gelen kutusunda gizlenir ve yalnız Karantina ekranında gösterilir. Bu depo KALKAN'a değil telefonunuza aittir; bu yüzden:</p>
+<ul>
+<li>KALKAN'ı kaldırmak ya da başka bir SMS uygulamasına geçmek bu mesajları <strong>silmez</strong>. Başka bir mesajlaşma uygulaması onları gösterebilir.</li>
+<li>Telefonunuzun kendi yedekleme ya da cihaz aktarımı özelliği kısa mesajları kapsıyorsa (örneğin Google hesabınıza yedekleme), karantinadaki mesajlar da diğer kısa mesajlarınız gibi bu yedeğe dahil olabilir. Bu yedekleri KALKAN yönetmez ve KALKAN'a ulaşmazlar.</li>
+<li>Bir mesaj geldiği anda sistem deposuna yazılamazsa (örneğin KALKAN varsayılan SMS rolünü o anda kaybettiyse) KALKAN onu kendi deposunda tutar ve ilk fırsatta sistem deposuna taşır. Karantina ekranı bu mesajları ayrıca belirtir. Taşınmadan önce KALKAN'ı kaldırırsanız bu mesajlar silinir.</li>
+<li>KALKAN önceki bir sürümün karantinasını sistem deposuna taşırken, o eski karantina dosyasının bir kopyasını güvenlik yedeği olarak kendi deposunda tutar. Bu kopya hiçbir yere gönderilmez ve KALKAN'ı kaldırdığınızda silinir. Bu mesajlardan birini silerseniz yedekteki kopyası da silinir.</li>
+</ul>
+<p>Karantinadaki bir mesajı Karantina ekranından kalıcı olarak silebilirsiniz; KALKAN önce onayınızı ister.</p>
 <h2>6. Yapmadıklarımız</h2>
 <ul>
 <li>Reklam SDK'sı yok</li>
