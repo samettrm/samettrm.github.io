@@ -26,7 +26,7 @@
 </head>
 <body>
   <h1>JSPS Kolay — Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-  <p class="sub">Son güncelleme: 4 Eylül 2026</p>
+  <p class="sub">Son güncelleme: 4 Kasım 2026</p>
 
   <p>JSPS Kolay, Jandarma ve Sahil Güvenlik personel sınavına hazırlık için sunulan bir mobil uygulamadır. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") m.10 kapsamındaki aydınlatma yükümlülüğünü yerine getirmek üzere hazırlanmıştır.</p>
 
@@ -40,7 +40,7 @@
   </table>
 
   <h2>2. Temel İlke: Veriler Öncelikle Cihazınızda Kalır</h2>
-  <p>Çözdüğünüz sorular, yanlışlarınız, favorileriniz, ilerleme ve istatistikleriniz <strong>öncelikle kendi cihazınızda</strong> saklanır. Uygulamayı kullanmak için <strong>üyelik ve giriş zorunlu değildir</strong>. Cihazınızdan veri çıkmasının yalnızca dört isteğe bağlı hâli vardır: lider tablosu, yapay zekâ mentörü, sesli anlatım ve bulut yedeği. Bunları kullanmadığınız sürece hiçbir kişisel veriniz cihazınızdan çıkmaz.</p>
+  <p>Çözdüğünüz sorular, yanlışlarınız, favorileriniz, ilerleme ve istatistikleriniz <strong>öncelikle kendi cihazınızda</strong> saklanır. Uygulamayı kullanmak için <strong>üyelik ve giriş zorunlu değildir</strong>. Cihazınızdan veri çıkmasının yalnızca beş isteğe bağlı hâli vardır: lider tablosu, yapay zekâ mentörü, sesli anlatım, bulut yedeği ve anlık bildirimler. Bunları kullanmadığınız sürece hiçbir kişisel veriniz cihazınızdan çıkmaz.</p>
 
   <h2>3. İşlenen Veriler, Amaçlar ve Hukuki Sebepler</h2>
   <table>
@@ -71,6 +71,11 @@
       <td>Meşru menfaat — hizmetin kullanımını anlamak (m.5/2-f)</td>
     </tr>
     <tr>
+      <td>Bildirimlere izin verirseniz cihazınızın anlık bildirim kimliği (Apple veya Google tarafından üretilir) ve cihaz türü (iOS/Android)</td>
+      <td>Duyuruların ve sınavla ilgili önemli gelişmelerin cihazınıza bildirim olarak gönderilmesi; bildirimin ulaşıp ulaşmadığının ölçülmesi (ad, e-posta veya konum içermez)</td>
+      <td>Açık rıza — bildirim izni sizin tercihinizdir ve cihaz ayarlarından her an kapatılabilir (m.5/1)</td>
+    </tr>
+    <tr>
       <td>Sesli anlatım için konu metni</td>
       <td>Metnin sese dönüştürülmesi</td>
       <td>Sözleşmenin ifası (m.5/2-c)</td>
@@ -84,8 +89,9 @@
     <tr><th>Sağlayıcı</th><th>Ne için</th><th>Nerede</th></tr>
     <tr><td>Supabase Inc.</td><td>Hesap, bulut yedeği, lider tablosu, anonim kullanım sayacı, sesli anlatım dosyalarının saklanması</td><td>Almanya (Frankfurt) — Avrupa Birliği</td></tr>
     <tr><td>Groq Inc.</td><td>Yapay zekâ mentör yanıtlarının üretilmesi (mesajınız + çalışma istatistikleriniz)</td><td>Amerika Birleşik Devletleri</td></tr>
-    <tr><td>Google LLC</td><td>Konu metninin sese dönüştürülmesi (sesli anlatım)</td><td>Amerika Birleşik Devletleri</td></tr>
-    <tr><td>Apple Inc. / Apple Distribution International Ltd.</td><td>Uygulamanın dağıtımı, ödeme, "Apple ile Giriş" kimlik doğrulaması</td><td>İrlanda / ABD</td></tr>
+    <tr><td>Google LLC</td><td>Konu metninin sese dönüştürülmesi (sesli anlatım); Android'de anlık bildirimlerin iletilmesi (Firebase Cloud Messaging)</td><td>Amerika Birleşik Devletleri</td></tr>
+    <tr><td>Apple Inc. / Apple Distribution International Ltd.</td><td>Uygulamanın dağıtımı, ödeme, "Apple ile Giriş" kimlik doğrulaması, iOS'ta anlık bildirimlerin iletilmesi</td><td>İrlanda / ABD</td></tr>
+    <tr><td>650 Industries, Inc. (Expo)</td><td>Anlık bildirimlerin Apple ve Google'a iletilmesi (bildirim kimliği ve bildirim metni)</td><td>Amerika Birleşik Devletleri</td></tr>
   </table>
   <p>Bu aktarımlar KVKK m.9 kapsamında <strong>yurt dışına aktarım</strong> niteliğindedir ve ilgili özelliği kullanmanız hâlinde açık rızanıza dayanılarak gerçekleştirilir. Söz konusu özellikleri kullanmamayı seçerek aktarımı tamamen engelleyebilirsiniz; uygulamanın çalışma, soru çözme ve konu anlatımı işlevleri bundan etkilenmez.</p>
   <p>Verileriniz bunun dışında hiçbir üçüncü kişiye aktarılmaz, satılmaz veya pazarlama amacıyla paylaşılmaz. Yetkili kamu kurumlarının hukuka uygun talepleri saklıdır.</p>
@@ -101,6 +107,7 @@
     <li><strong>Mentör mesajları:</strong> yanıt üretildikten sonra tarafımızca saklanmaz.</li>
     <li><strong>Sesli anlatım dosyaları:</strong> kişisel veri içermez; konu bazında önbelleklenir.</li>
     <li><strong>Anonim kullanım kaydı:</strong> cihaz kimliği ve son açılış zamanı; toplu sayı üretmek için tutulur, kimliğinizle ilişkilendirilmez.</li>
+    <li><strong>Anlık bildirim kimliği:</strong> bildirim izniniz açık kaldığı sürece. Uygulamayı kaldırdığınızda Apple/Google bu kimliği geçersiz kılar; kayıt bir sonraki gönderimde tarafımızca silinir.</li>
   </ul>
 
   <h2>7. Veri Güvenliği</h2>
