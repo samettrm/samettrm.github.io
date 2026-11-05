@@ -45,12 +45,17 @@
   </header>
   <main>
 <h1>KALKAN — Gizlilik Politikası</h1>
-<p><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 <strong>Son güncelleme:</strong> 17 Ekim 2026 <strong>Veri sorumlusu:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>İletişim:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye <strong>E-posta:</strong> bsdigitalapp@gmail.com</p>
+<p><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 · <strong>Son güncelleme:</strong> 5 Kasım 2026<br>
+<strong>Veri sorumlusu:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye<br>
+<strong>E-posta:</strong> bsdigitalapp@gmail.com</p>
 <h2>Kısa hâli</h2>
-<p>&gt; <strong>Mesaj içeriği cihazınızda işlenir ve KALKAN'a iletilmez.</strong></p>
-<p>KALKAN mesajlarınızı yalnızca telefonunuzda okur ve her birinin spam olup olmadığına orada karar verir. Metin, gönderici, ekler ve araçlarımızla kontrol ettiğiniz her şey cihazda kalır.</p>
-<p>KALKAN <strong>tamamen internetsiz bir uygulama değildir</strong>: imzalı bir tehdit veritabanı indirir ve satın almaları doğrulama servisimizle doğrular. Bu isteklerin hiçbiri mesaj verinizi taşımaz. Ayrıntılar aşağıda.</p>
-<h2>1. Neyi nerede işliyoruz</h2>
+<ul>
+<li><strong>Mesaj içeriği, gönderen, numaralar ve kontrol ettiğiniz bağlantılar cihazınızda işlenir; KALKAN'a hiçbir zaman iletilmez.</strong></li>
+<li>Giriş isteğe bağlıdır. Apple ya da Google ile giriş yaparsanız adınızı ve e-posta adresinizi saklamayız; yalnız takma bir hesap kimliği tutarız.</li>
+<li>Uygulamayı geliştirmek için takma bir kurulum kimliğiyle kullanım ölçümü yaparız: hangi ekranların açıldığı, hangi özelliğin kullanıldığı gibi. Reklam, uygulamalar arası takip ve veri satışı yoktur.</li>
+<li>KALKAN Pro aboneliği App Store ya da Google Play üzerinden alınır; abonelik altyapısını RevenueCat sağlar.</li>
+</ul>
+<h2>1. Cihazınızda kalanlar</h2>
 <table><tbody>
 <tr><td>Veri</td><td>Nerede işlenir</td><td>Cihazdan çıkar mı?</td></tr>
 <tr><td>SMS içeriği</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
@@ -59,48 +64,77 @@
 <tr><td>Bağlantı Kontrolü ile denetlediğiniz adres</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Numara Kontrolü ile denetlediğiniz numara</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Tek kullanımlık kodlar (OTP)</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
-<tr><td>Karantinadaki mesajlar (Android)</td><td>Cihazda, telefonunuzun sistem mesaj deposunda (bkz. §5)</td><td><strong>Hayır</strong>, KALKAN bunları göndermez</td></tr>
+<tr><td>Karantinadaki mesajlar (Android)</td><td>Cihazda, telefonunuzun sistem mesaj deposunda (bkz. §6)</td><td><strong>Hayır</strong>, KALKAN bunları göndermez</td></tr>
 <tr><td>İzin/engel listeleriniz</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Aktivite sayaçları</td><td>Cihazda</td><td><strong>Hayır</strong></td></tr>
 <tr><td>Rehber</td><td><strong>Hiç erişilmiyor</strong></td><td>—</td></tr>
 </tbody></table>
 <p>Mesaj içeriği alan bir sunucumuz yok. İstesek bile gönderebileceğimiz bir uç nokta bulunmuyor.</p>
-<h2>2. KALKAN'ın yaptığı ağ istekleri</h2>
-<h3>2.1 Tehdit veritabanı indirme</h3>
-<p>KALKAN, imzalı bir spam kural seti, yerel model ve bilinen dolandırıcılık numarası listesi indirir. Bu düz bir <code>GET</code> isteğidir; <strong>sorgu parametresi, gövde, çerez, cihaz kimliği veya hesap kimliği taşımaz</strong>. Kimin ne indirdiğini bilemeyiz.</p>
-<h3>2.2 Satın alma doğrulama</h3>
-<p>KALKAN Pro satın alırsanız uygulama, doğrulama servisimize <strong>tek bir alan</strong> gönderir: Google Play'in verdiği satın alma jetonu. Servis, fazladan alan içeren istekleri reddeder. Jetonunuz hiçbir log kaydına tam hâliyle yazılmaz.</p>
-<h3>2.3 Apple ve Google</h3>
-<p>Satın almalar Apple StoreKit veya Google Play Billing üzerinden yürür. Bu trafik sizinle Apple/Google arasındadır; biz yönetmiyoruz ve içeriğini göremiyoruz. Mesaj verisi içermez.</p>
-<h2>3. Android varsayılan SMS uygulaması</h2>
+<h2>2. Sunucumuza gelenler</h2>
+<p>KALKAN'ın kendi sunucusu (Cloudflare üzerinde çalışır) yalnız aşağıdakileri alır. Hiçbiri mesaj, gönderen, numara, bağlantı ya da liste içeriği taşımaz.</p>
+<table><tbody>
+<tr><td>Veri</td><td>Ne için</td><td>Ne kadar saklanır</td></tr>
+<tr><td>Takma kurulum kimliği (uygulama ilk açılışta rastgele üretir; reklam kimliği ya da cihaz seri numarası değildir)</td><td>Ölçüm kayıtlarını aynı kuruluma bağlamak, satın almayı doğrulamak</td><td>Kurulum 24 ay görülmezse silinir</td></tr>
+<tr><td>Uygulama sürümü, platform (iOS/Android), cihaz modeli (ör. iPhone17,1), işletim sistemi sürümü</td><td>Hataları sürüm ve cihaza göre bulmak</td><td>24 ay</td></tr>
+<tr><td>Ülke (bağlantıdan çıkarılan iki harfli kod; IP adresi saklanmaz)</td><td>Hangi ülkelerde kullanıldığını görmek</td><td>24 ay</td></tr>
+<tr><td>Ürün olayları: ilk açılış, tanıtımın tamamlanması, abonelik ekranının görülmesi, satın alma adımları, Kontrol aracının kullanılması, listeye kural eklenmesi gibi; olayın adı ve zamanı</td><td>Ürünü geliştirmek, hangi adımda zorlanıldığını görmek</td><td>24 ay</td></tr>
+<tr><td>Çökme sayısı (çökmenin içeriği ya da kod izi gönderilmez)</td><td>Kararlılığı izlemek</td><td>24 ay</td></tr>
+<tr><td>Takma hesap kimliği ve oturum kaydı (yalnız giriş yaparsanız, §3)</td><td>Hesabınızı tanımak</td><td>Oturum 90 gün; hesap siz silene kadar</td></tr>
+<tr><td>Satın alma kayıtları: ürün, fiyat, para birimi, ülke, mağaza, zaman (RevenueCat iletir, §4)</td><td>Satın almayı ve geliri doğrulamak</td><td>Yasal saklama süreleri boyunca</td></tr>
+</tbody></table>
+<p>Ölçüm birinci taraftır: üçüncü taraf analitik ya da reklam kitaplığı kullanmayız, reklam kimliğinizi (IDFA/AAID) okumayız ve bu verileri başka uygulamalar ya da web siteleri arasında sizi izlemek için kullanmayız. Geliştirme ve test kurulumları gerçek kullanım verisinden ayrılır.</p>
+<h2>3. Hesap ve giriş (isteğe bağlı)</h2>
+<p>KALKAN'ın koruması hesapsız çalışır. Ayarlar'dan Apple ya da Google ile giriş yaparsanız:</p>
+<ul>
+<li>Apple ya da Google bize bir kimlik jetonu verir; jetonu sunucumuzda doğrularız.</li>
+<li>Sakladığımız: sağlayıcının size verdiği kullanıcı kimliğinin tek yönlü özetinden üretilen takma bir hesap kimliği, sağlayıcının adı (Apple/Google) ve hesabın oluşturulma zamanı. <strong>Adınızı ve e-posta adresinizi saklamayız.</strong> Apple ile girişte ad ya da e-posta istemeyiz. Google ile girişte e-posta adresiniz yalnız giriş anında doğrulama için okunur ve saklanmaz.</li>
+<li>Apple ile giriş yaptıysanız Apple'ın verdiği yenileme jetonunu şifreli olarak saklarız. Tek amacı, hesabınızı sildiğinizde Apple'daki KALKAN bağlantısını iptal etmektir.</li>
+<li>Google'dan gelen veriyi yalnız giriş için kullanırız; reklam için kullanmayız, satmayız ve başkasıyla paylaşmayız. Kullanımımız Google API Hizmetleri Kullanıcı Verileri Politikası'na ve Sınırlı Kullanım şartlarına uyar.</li>
+</ul>
+<h2>4. Abonelik ve satın almalar</h2>
+<p>KALKAN Pro, App Store ya da Google Play üzerinden alınan yıllık otomatik yenilenen bir aboneliktir. Ödeme bilgileriniz Apple ya da Google'da kalır; biz görmeyiz. Abonelik altyapısını <a href="https://www.revenuecat.com/privacy">RevenueCat</a> sağlar: mağazanın satın alma kaydını ve KALKAN'ın takma kurulum kimliğini alır, aboneliğinizin geçerli olup olmadığını uygulamaya bildirir ve satın alma olaylarını (ürün, fiyat, para birimi, ülke, mağaza, zaman) sunucumuza iletir. Aboneliğinizi App Store ya da Google Play hesap ayarlarınızdan yönetir ve iptal edersiniz.</p>
+<h3>4.1 Android'de önceki satın almalar</h3>
+<p>KALKAN'ı Google Play'den daha önce ücretli olarak satın aldıysanız, uygulama bunu Google Play Integrity ile doğrular: Google'ın imzaladığı bir jeton sunucumuza gider, sunucumuz Google'a "bu kurulum lisanslı mı" diye sorar. Yalnız bu sonucu kullanırız; lisanslıysa ömür boyu KALKAN Pro hakkınız RevenueCat'te takma kimliğinize tanımlanır.</p>
+<h2>5. Diğer ağ istekleri ve hizmet sağlayıcılar</h2>
+<h3>5.1 Tehdit veritabanı indirme (Android)</h3>
+<p>Android'de KALKAN imzalı bir spam kural seti, yerel model ve bilinen dolandırıcılık numarası listesi indirir. Bu düz bir <code>GET</code> isteğidir; sorgu parametresi, gövde, çerez, cihaz kimliği veya hesap kimliği taşımaz.</p>
+<h3>5.2 Hizmet sağlayıcılar</h3>
+<ul>
+<li><strong>Cloudflare</strong> — sunucumuzu barındırır. Bağlantı sırasında IP adresinizi teknik olarak işler; biz IP adresini saklamayız.</li>
+<li><strong>RevenueCat</strong> — abonelik altyapısı (§4).</li>
+<li><strong>Apple</strong> — App Store, Apple ile giriş, uygulama değerlendirme penceresi.</li>
+<li><strong>Google</strong> — Google Play, Google ile giriş, Play Integrity, uygulama değerlendirme penceresi.</li>
+</ul>
+<p>Bu sağlayıcıların sunucuları Türkiye dışında (ör. Avrupa Birliği ve ABD) bulunabilir. Veriler yalnız bu politikada yazan amaçlarla aktarılır.</p>
+<h2>6. Android varsayılan SMS uygulaması</h2>
 <p>Android'de KALKAN, <strong>varsayılan SMS uygulamanız</strong> olmayı ister. Bunu işletim sistemi zorunlu kılar: yalnız varsayılan uygulama gelen mesajı gelen kutunuza ulaşmadan <strong>önce</strong> görebilir; gerçek karantinayı mümkün kılan budur.</p>
 <p>Bu rol sizdeyken KALKAN cihazınızda SMS/MMS okuyabilir, yazabilir ve gönderebilir. Rolü geri alırsanız okuma, yazma ve gönderme <strong>anında durur</strong> — bu, her ayrıcalıklı çağrıda kod düzeyinde uygulanır.</p>
-<h2>4. Bildirimler</h2>
-<p>Gelen mesaj bildirimleri cihazınızda oluşturulur. Karantina bildirimleri <strong>mesaj gövdesini bilinçli olarak göstermez</strong>.</p>
-<h2>5. Saklama ve silme</h2>
-<p>KALKAN'ın kendi verileri (izin/engel listeleriniz, aktivite sayaçları ve ayarlar) yalnız cihazınızda saklanır. Uygulamayı kaldırmak bunları siler; bu veriler için yedekleme ve cihaz aktarımı kapalıdır. Listelerinizi istediğiniz zaman uygulama içinden değiştirebilirsiniz.</p>
-<p><strong>Android'de mesajlar farklıdır.</strong> KALKAN, varsayılan SMS uygulamanız olarak karantinaya alınan spam dahil gelen her mesajı Android'in sistem mesaj deposuna kaydeder. Karantinadaki mesajlar KALKAN gelen kutusunda gizlenir ve yalnız Karantina ekranında gösterilir. Bu depo KALKAN'a değil telefonunuza aittir; bu yüzden:</p>
+<p>KALKAN, varsayılan SMS uygulamanız olarak karantinaya alınan spam dahil gelen her mesajı Android'in sistem mesaj deposuna kaydeder. Karantinadaki mesajlar KALKAN gelen kutusunda gizlenir ve yalnız Karantina ekranında gösterilir. Bu depo KALKAN'a değil telefonunuza aittir; bu yüzden:</p>
 <ul>
 <li>KALKAN'ı kaldırmak ya da başka bir SMS uygulamasına geçmek bu mesajları <strong>silmez</strong>. Başka bir mesajlaşma uygulaması onları gösterebilir.</li>
 <li>Telefonunuzun kendi yedekleme ya da cihaz aktarımı özelliği kısa mesajları kapsıyorsa (örneğin Google hesabınıza yedekleme), karantinadaki mesajlar da diğer kısa mesajlarınız gibi bu yedeğe dahil olabilir. Bu yedekleri KALKAN yönetmez ve KALKAN'a ulaşmazlar.</li>
 <li>Bir mesaj geldiği anda sistem deposuna yazılamazsa (örneğin KALKAN varsayılan SMS rolünü o anda kaybettiyse) KALKAN onu kendi deposunda tutar ve ilk fırsatta sistem deposuna taşır. Karantina ekranı bu mesajları ayrıca belirtir. Taşınmadan önce KALKAN'ı kaldırırsanız bu mesajlar silinir.</li>
 <li>KALKAN önceki bir sürümün karantinasını sistem deposuna taşırken, o eski karantina dosyasının bir kopyasını güvenlik yedeği olarak kendi deposunda tutar. Bu kopya hiçbir yere gönderilmez ve KALKAN'ı kaldırdığınızda silinir. Bu mesajlardan birini silerseniz yedekteki kopyası da silinir.</li>
 </ul>
-<p>Karantinadaki bir mesajı Karantina ekranından kalıcı olarak silebilirsiniz; KALKAN önce onayınızı ister.</p>
-<h2>6. Yapmadıklarımız</h2>
+<p>Karantinadaki bir mesajı Karantina ekranından kalıcı olarak silebilirsiniz; KALKAN önce onayınızı ister. Gelen mesaj bildirimleri cihazınızda oluşturulur; karantina bildirimleri mesaj gövdesini bilinçli olarak göstermez.</p>
+<h2>7. Saklama ve silme</h2>
 <ul>
-<li>Reklam SDK'sı yok</li>
-<li>Analitik veya davranışsal takip SDK'sı yok</li>
-<li>Çökme raporlama SDK'sı yok</li>
-<li>Atıf (attribution) SDK'sı yok</li>
-<li>WebView yok</li>
-<li>Kişisel verinin satışı veya paylaşımı yok</li>
+<li>KALKAN'ın cihazdaki verileri (listeleriniz, aktivite sayaçları, ayarlar, takma kurulum kimliği) yalnız cihazınızda saklanır ve uygulamayı kaldırınca silinir; bu veriler için yedekleme ve cihaz aktarımı kapalıdır.</li>
+<li>Sunucudaki ölçüm kayıtları en çok 24 ay saklanır; sunucu bunları her gün kendiliğinden temizler. Uygulamayı kaldırdığınızda kurulum kimliği cihazınızdan silinir ve sunucudaki kayıtlar size bağlanamaz hâle gelir.</li>
+<li><strong>Hesabı sil</strong> (Ayarlar): hesabınız, oturumlarınız, Apple yenileme jetonu (Apple'da da iptal edilir) ve hesabınıza bağlı kurulumların ölçüm kayıtları silinir. Satın alma kayıtları muhasebe için kimliksiz olarak kalır. Hesap silmek aboneliği iptal etmez; aboneliği App Store ya da Google Play'den iptal edersiniz.</li>
 </ul>
-<h2>7. Çocuklar</h2>
+<h2>8. Yapmadıklarımız</h2>
+<ul>
+<li>Reklam ya da reklam SDK'sı yok</li>
+<li>Reklam kimliği (IDFA/AAID) okunmaz; uygulamalar ve web siteleri arasında takip yok</li>
+<li>Üçüncü taraf analitik, çökme raporlama ya da atıf (attribution) SDK'sı yok</li>
+<li>Kişisel verinin satışı yok</li>
+</ul>
+<h2>9. Çocuklar</h2>
 <p>KALKAN 13 yaş altına yönelik değildir.</p>
-<h2>8. Haklarınız</h2>
-<p>Sunucularımızda kişisel veri toplamadığımız için erişilecek, düzeltilecek veya silinecek bir hesap bulunmuyor. Sorularınız için: bsdigitalapp@gmail.com</p>
-<h2>9. Değişiklikler</h2>
+<h2>10. Haklarınız</h2>
+<p>6698 sayılı KVKK ve geçerli olduğu yerlerde GDPR kapsamında verilerinize erişme, düzeltilmesini ya da silinmesini isteme ve işlenmesine itiraz etme hakkınız vardır. Hesabınızı uygulama içinden <strong>Ayarlar › Hesabı sil</strong> ile silebilirsiniz. Diğer talepler için: bsdigitalapp@gmail.com. Verileri; aboneliği ve hesabı sağlamak (sözleşmenin ifası) ve ürünü geliştirip güvenliğini korumak (meşru menfaat) amaçlarıyla işleriz.</p>
+<h2>11. Değişiklikler</h2>
 <p>Önemli değişiklikler uygulama içinde ve https://samettrm.github.io/kalkan/privacy/tr/ adresinde duyurulur.</p>
   </main>
   <nav><a href="/kalkan/privacy/tr/">Gizlilik</a><a href="/kalkan/terms/tr/">Koşullar</a><a href="/kalkan/support/tr/">Destek</a><a href="/kalkan/support/">English</a></nav>
