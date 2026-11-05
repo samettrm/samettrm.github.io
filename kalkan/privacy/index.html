@@ -89,10 +89,11 @@
 <li>Apple or Google gives us an identity token, which we verify on our server.</li>
 <li>What we store: a pseudonymous account ID derived from a one-way hash of the user ID your provider assigns, the provider's name (Apple/Google) and the time the account was created. <strong>We do not store your name or email address.</strong> With Sign in with Apple we do not request your name or email. With Google, your email address is read only at sign-in for verification and is not stored.</li>
 <li>If you signed in with Apple, we store the refresh token Apple issues, encrypted. Its only purpose is to revoke KALKAN's connection at Apple when you delete your account.</li>
+<li>If you sign in, your KALKAN Pro subscription is linked to your account: instead of the installation ID, RevenueCat receives a random ID created for your account, and KALKAN Pro also works on your other devices signed in with the same account. If you sign out, this device goes back to its installation ID.</li>
 <li>We use data received from Google only for sign-in; we do not use it for advertising, sell it or share it. Our use complies with the Google API Services User Data Policy, including the Limited Use requirements.</li>
 </ul>
 <h2>4. Subscription and purchases</h2>
-<p>KALKAN Pro is a yearly auto-renewing subscription purchased through the App Store or Google Play. Your payment details stay with Apple or Google; we never see them. <a href="https://www.revenuecat.com/privacy">RevenueCat</a> provides the subscription infrastructure: it receives the store's purchase record and KALKAN's pseudonymous installation ID, tells the app whether your subscription is active, and forwards purchase events (product, price, currency, country, store, time) to our server. You manage and cancel the subscription in your App Store or Google Play account settings.</p>
+<p>KALKAN Pro is a yearly auto-renewing subscription purchased through the App Store or Google Play. Your payment details stay with Apple or Google; we never see them. <a href="https://www.revenuecat.com/privacy">RevenueCat</a> provides the subscription infrastructure: it receives the store's purchase record and KALKAN's pseudonymous installation ID (or, if you signed in, the random ID of your account, §3), tells the app whether your subscription is active, and forwards purchase events (product, price, currency, country, store, time) to our server. You manage and cancel the subscription in your App Store or Google Play account settings.</p>
 <h3>4.1 Earlier purchases on Android</h3>
 <p>If you bought KALKAN on Google Play when it was a paid app, the app verifies this with Google Play Integrity: a token signed by Google is sent to our server, and our server asks Google whether this installation is licensed. We use only that result; if it is licensed, a lifetime KALKAN Pro entitlement is assigned to your pseudonymous ID at RevenueCat.</p>
 <h2>5. Other network requests and service providers</h2>
@@ -121,7 +122,7 @@
 <ul>
 <li>KALKAN's on-device data (your lists, activity counters, settings, the pseudonymous installation ID) is stored only on your device and is deleted when you uninstall the app; backup and device transfer are disabled for this data.</li>
 <li>Usage records on our server are kept for at most 24 months; the server purges them automatically every day. When you uninstall the app, the installation ID is deleted from your device and the server records can no longer be linked to you.</li>
-<li><strong>Delete account</strong> (Settings): your account, your sessions, the Apple refresh token (also revoked at Apple) and the usage records of installations linked to your account are deleted. Purchase records remain, de-identified, for accounting. Deleting your account does not cancel your subscription; cancel it in the App Store or Google Play.</li>
+<li><strong>Delete account</strong> (Settings): your account, your sessions, the Apple refresh token (also revoked at Apple) the usage records of installations linked to your account and your account's record at RevenueCat are deleted. Purchase records remain, de-identified, for accounting. Deleting your account does not cancel your subscription; cancel it in the App Store or Google Play.</li>
 </ul>
 <h2>8. What we do not do</h2>
 <ul>
