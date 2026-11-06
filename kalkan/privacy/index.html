@@ -45,12 +45,12 @@
   </header>
   <main>
 <h1>KALKAN — Privacy Policy</h1>
-<p><strong>Effective date:</strong> 11 August 2026 · <strong>Last updated:</strong> 5 November 2026<br>
+<p><strong>Effective date:</strong> 11 August 2026 · <strong>Last updated:</strong> 6 November 2026<br>
 <strong>Controller:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye<br>
 <strong>Email:</strong> bsdigitalapp@gmail.com</p>
 <h2>The short version</h2>
 <ul>
-<li><strong>Message content, senders, numbers and the links you check are processed on your device and are never sent to KALKAN.</strong></li>
+<li><strong>Message content and the links you check are processed on your device and are never sent to KALKAN.</strong> Sender and caller numbers are processed on your device too; only <strong>a number you block or report as spam</strong> is sent to our server without your identity, if community reports are on (the default, §2a).</li>
 <li>Signing in is optional. If you sign in with Apple or Google, we do not store your name or email address; we keep only a pseudonymous account ID.</li>
 <li>To improve the app we measure usage with a pseudonymous installation ID: which screens are opened, which features are used. There is no advertising, no cross-app tracking and no sale of data.</li>
 <li>The KALKAN Pro subscription is purchased through the App Store or Google Play; RevenueCat provides the subscription infrastructure.</li>
@@ -60,12 +60,12 @@
 <tr><td>Data</td><td>Where it is processed</td><td>Leaves your device?</td></tr>
 <tr><td>SMS content</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>MMS content and attachments</td><td>On device</td><td><strong>No</strong></td></tr>
-<tr><td>Sender / recipient numbers</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>Sender / recipient numbers</td><td>On device</td><td><strong>No</strong> — except a number you block or report, if community reports are on (§2a)</td></tr>
 <tr><td>A link you check with Link Check</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>A number you check with Number Check</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>One-time codes (OTP)</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>Quarantined messages (Android)</td><td>On device, in your phone's system message storage (see §6)</td><td><strong>No</strong>, KALKAN does not send them</td></tr>
-<tr><td>Your allow/block lists</td><td>On device</td><td><strong>No</strong></td></tr>
+<tr><td>Your allow/block lists</td><td>On device</td><td><strong>No</strong> — a number you add to the block list is sent as a vote if community reports are on (§2a); your allow list is never sent</td></tr>
 <tr><td>Activity counters</td><td>On device</td><td><strong>No</strong></td></tr>
 <tr><td>Contacts</td><td><strong>Not accessed at all</strong></td><td>—</td></tr>
 </tbody></table>
@@ -81,8 +81,19 @@
 <tr><td>Crash count (no crash contents or stack traces are sent)</td><td>Monitoring stability</td><td>24 months</td></tr>
 <tr><td>Pseudonymous account ID and session record (only if you sign in, §3)</td><td>Recognising your account</td><td>Sessions 90 days; the account until you delete it</td></tr>
 <tr><td>Purchase records: product, price, currency, country, store, time (forwarded by RevenueCat, §4)</td><td>Verifying purchases and revenue</td><td>For the statutory retention periods</td></tr>
+<tr><td>Community reports: a number you block or report and your vote (spam / not spam), with the pseudonymous installation ID (§2a)</td><td>Blocking spam numbers for all KALKAN Pro users</td><td>90 days</td></tr>
 </tbody></table>
 <p>Measurement is first-party: we use no third-party analytics or advertising libraries, we do not read your advertising identifier (IDFA/AAID), and we do not use this data to track you across other apps or websites. Development and test installations are kept separate from real usage data.</p>
+<h3>2a. Community reports (on by default)</h3>
+<p>When you block a number in KALKAN (Lists, Activity, or <strong>Block</strong> in the call notification) or report it as spam with KALKAN from Recents on iPhone, that number and your vote are sent to our server with your pseudonymous installation ID. When you say “Not spam”, a counter-vote is sent. <strong>Message content, your contacts, your name and your email address are never sent.</strong></p>
+<ul>
+<li><strong>Purpose:</strong> to block, for all KALKAN Pro users, a number that at least three different KALKAN Pro users with a verified purchase reported as spam in the last 90 days. If “Not spam” votes reach half of the spam votes, the number leaves the list.</li>
+<li><strong>Whose vote counts:</strong> only users whose KALKAN Pro comes from a real store purchase; we check your subscription status at RevenueCat for this. Reports from installations whose vote does not count are not stored.</li>
+<li><strong>Retention:</strong> votes are kept for 90 days and then deleted automatically. If you delete your account or your installation record, your votes are deleted too.</li>
+<li><strong>Turning it off:</strong> Settings › Community reports. While it is off, pending reports are not sent either.</li>
+<li><strong>A caller's number is a third person's data.</strong> We process it on the basis of our legitimate interest in preventing fraud and unwanted calls. Anyone who believes their number is on the list by mistake can object at bsdigitalapp@gmail.com; we will review it and remove it.</li>
+</ul>
+
 <h2>3. Account and sign-in (optional)</h2>
 <p>KALKAN's protection works without an account. If you sign in with Apple or Google in Settings:</p>
 <ul>
@@ -121,6 +132,7 @@
 <h2>7. Retention and deletion</h2>
 <ul>
 <li>KALKAN's on-device data (your lists, activity counters, settings, the pseudonymous installation ID) is stored only on your device and is deleted when you uninstall the app; backup and device transfer are disabled for this data.</li>
+<li>Community report votes are kept for 90 days and purged automatically every day (§2a).</li>
 <li>Usage records on our server are kept for at most 24 months; the server purges them automatically every day. When you uninstall the app, the installation ID is deleted from your device and the server records can no longer be linked to you.</li>
 <li><strong>Delete account</strong> (Settings): your account, your sessions, the Apple refresh token (also revoked at Apple) the usage records of installations linked to your account and your account's record at RevenueCat are deleted. Purchase records remain, de-identified, for accounting. Deleting your account does not cancel your subscription; cancel it in the App Store or Google Play.</li>
 </ul>
