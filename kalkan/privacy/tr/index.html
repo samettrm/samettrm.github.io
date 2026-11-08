@@ -45,14 +45,14 @@
   </header>
   <main>
 <h1>KALKAN — Gizlilik Politikası</h1>
-<p><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 · <strong>Son güncelleme:</strong> 6 Kasım 2026<br>
+<p><strong>Yürürlük tarihi:</strong> 11 Ağustos 2026 · <strong>Son güncelleme:</strong> 9 Kasım 2026<br>
 <strong>Veri sorumlusu:</strong> BUSATER YAZILIM A.Ş. — CULHA D:1 No:114-1, Etlik Mahallesi, Etlik Caddesi, Keçiören, 06010 Ankara, Türkiye<br>
 <strong>E-posta:</strong> bsdigitalapp@gmail.com</p>
 <h2>Kısa hâli</h2>
 <ul>
 <li><strong>Mesaj içeriği ve kontrol ettiğiniz bağlantılar cihazınızda işlenir; KALKAN'a hiçbir zaman iletilmez.</strong> Gönderen ve arayan numaraları da cihazda işlenir; yalnız <strong>sizin engellediğiniz ya da spam olarak bildirdiğiniz numara</strong>, topluluk bildirimi açıksa (varsayılan) kimliğiniz olmadan sunucumuza gider (§2a).</li>
 <li>Giriş isteğe bağlıdır. Apple ya da Google ile giriş yaparsanız adınızı ve e-posta adresinizi saklamayız; yalnız takma bir hesap kimliği tutarız.</li>
-<li>Uygulamayı geliştirmek için takma bir kurulum kimliğiyle kullanım ölçümü yaparız: hangi ekranların açıldığı, hangi özelliğin kullanıldığı gibi. Reklam, uygulamalar arası takip ve veri satışı yoktur.</li>
+<li>Uygulamayı geliştirmek için takma bir kurulum kimliğiyle kullanım ölçümü yaparız: hangi ekranların açıldığı, hangi özelliğin kullanıldığı gibi. Veri satmayız. KALKAN Pro olmadan uygulamada Google AdMob reklamları gösterilir (§5a); KALKAN Pro'da hiçbir reklam yoktur.</li>
 <li>KALKAN Pro aboneliği App Store ya da Google Play üzerinden alınır; abonelik altyapısını RevenueCat sağlar.</li>
 </ul>
 <h2>1. Cihazınızda kalanlar</h2>
@@ -82,8 +82,9 @@
 <tr><td>Takma hesap kimliği ve oturum kaydı (yalnız giriş yaparsanız, §3)</td><td>Hesabınızı tanımak</td><td>Oturum 90 gün; hesap siz silene kadar</td></tr>
 <tr><td>Satın alma kayıtları: ürün, fiyat, para birimi, ülke, mağaza, zaman (RevenueCat iletir, §4)</td><td>Satın almayı ve geliri doğrulamak</td><td>Yasal saklama süreleri boyunca</td></tr>
 <tr><td>Topluluk bildirimi: engellediğiniz ya da bildirdiğiniz numara ve oyunuz (spam / istenmeyen değil), takma kurulum kimliğiyle (§2a)</td><td>Spam numaraları bütün KALKAN Pro kullanıcıları için engellemek</td><td>90 gün</td></tr>
+<tr><td>Bildirim jetonu (Firebase Cloud Messaging), uygulama sürümü ve build numarası, cihaz dili — yalnız bildirime izin verdiyseniz</td><td>Mağazada yeni sürüm çıkınca tek bildirim göndermek: "Yeni bir güncelleme var. Güncellemek için tıklayınız."</td><td>Uygulama 180 gün açılmazsa silinir; kurulum ya da hesap silinince de silinir</td></tr>
 </tbody></table>
-<p>Ölçüm birinci taraftır: üçüncü taraf analitik ya da reklam kitaplığı kullanmayız, reklam kimliğinizi (IDFA/AAID) okumayız ve bu verileri başka uygulamalar ya da web siteleri arasında sizi izlemek için kullanmayız. Geliştirme ve test kurulumları gerçek kullanım verisinden ayrılır.</p>
+<p>Ölçüm birinci taraftır: üçüncü taraf analitik kitaplığı kullanmayız ve bu kayıtları başka uygulamalar ya da web siteleri arasında sizi izlemek için kullanmayız. Reklamlar §5a'da ayrıca anlatılır. Geliştirme ve test kurulumları gerçek kullanım verisinden ayrılır.</p>
 <h3>2a. Topluluk bildirimi (varsayılan açık)</h3>
 <p>KALKAN'da bir numarayı engellediğinizde (Listeler, Aktivite ya da arama bildirimindeki <strong>Engelle</strong>) veya iPhone'da Son Aramalar'dan KALKAN ile spam olarak bildirdiğinizde, o numara ve oyunuz takma kurulum kimliğinizle birlikte sunucumuza gönderilir. “İstenmeyen değil” dediğinizde karşı oy gönderilir. <strong>Mesaj içeriği, rehberiniz, adınız ve e-posta adresiniz gönderilmez.</strong></p>
 <ul>
@@ -115,7 +116,15 @@
 <li><strong>Cloudflare</strong> — sunucumuzu barındırır. Bağlantı sırasında IP adresinizi teknik olarak işler; biz IP adresini saklamayız.</li>
 <li><strong>RevenueCat</strong> — abonelik altyapısı (§4).</li>
 <li><strong>Apple</strong> — App Store, Apple ile giriş, uygulama değerlendirme penceresi.</li>
-<li><strong>Google</strong> — Google Play, Google ile giriş, Play Integrity, uygulama değerlendirme penceresi.</li>
+<li><strong>Google</strong> — Google Play, Google ile giriş, Play Integrity, uygulama değerlendirme penceresi, Firebase Cloud Messaging (güncelleme bildirimi) ve AdMob (reklamlar, §5a).</li>
+</ul>
+<h3>5a. Reklamlar (KALKAN Pro olmadan)</h3>
+<p>KALKAN Pro'su olmayan kullanıcılar <strong>Google AdMob</strong> reklamları görür: uygulama açılırken ya da öne gelirken bir reklam, banner'lar, sekme değiştirirken ara sıra tam ekran reklam ve kendi başlattığınız isteğe bağlı ödüllü reklam (10 dakika reklamsız kullanım verir). <strong>KALKAN Pro kullanıcılarına hiçbir reklam gösterilmez.</strong></p>
+<ul>
+<li><strong>Google'a gidenler:</strong> cihaz ve uygulama bilgisi, IP adresi ve ondan çıkarılan yaklaşık konum, reklam etkileşimleri ve izin verilen durumda reklam kimliği — iPhone'da yalnız Apple'ın takip penceresinde izin verirseniz; Android'de cihaz ayarlarından silmediğiniz ya da sıfırlamadığınız sürece.</li>
+<li><strong>Rıza:</strong> Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklam istenmeden önce Google'ın rıza formu seçiminizi sorar. iPhone'da takibe izin vermezseniz reklamlar kişiselleştirilmez. Seçiminizi cihazınızın gizlilik ayarlarından değiştirebilirsiniz.</li>
+<li><strong>Reklamverenlerle asla paylaşılmayanlar:</strong> mesaj içeriği, rehber, kontrol ettiğiniz numara ve bağlantılar, listeleriniz. KALKAN bunların hiçbirini Google'a göndermez.</li>
+<li>Google bu veriyi kendi politikasına göre işler: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerini kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a>.</li>
 </ul>
 <p>Bu sağlayıcıların sunucuları Türkiye dışında (ör. Avrupa Birliği ve ABD) bulunabilir. Veriler yalnız bu politikada yazan amaçlarla aktarılır.</p>
 <h2>6. Android varsayılan SMS uygulaması</h2>
@@ -138,8 +147,8 @@
 </ul>
 <h2>8. Yapmadıklarımız</h2>
 <ul>
-<li>Reklam ya da reklam SDK'sı yok</li>
-<li>Reklam kimliği (IDFA/AAID) okunmaz; uygulamalar ve web siteleri arasında takip yok</li>
+<li>KALKAN Pro kullanıcılarına hiçbir reklam yok</li>
+<li>Mesaj içeriği, rehber, kontrol edilen numara ve bağlantılar reklamverenlerle paylaşılmaz</li>
 <li>Üçüncü taraf analitik, çökme raporlama ya da atıf (attribution) SDK'sı yok</li>
 <li>Kişisel verinin satışı yok</li>
 </ul>
