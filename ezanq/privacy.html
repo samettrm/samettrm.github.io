@@ -14,7 +14,7 @@
 <p>Location permission is requested only when you tap <em>Use my location</em>, and location is used only while the app is open (never in the background). Coordinates are rounded to about 1 km and used on your device to calculate prayer times and the Qibla. To turn the location into a place name, your device's operating system (Apple on iOS, Google on Android) uses its geocoding service. You can also pick a city from the list; then location permission is never requested. The location sent for the mosque search is described in section 6.</p>
 
 <h2>2. Notifications</h2>
-<p>Prayer notifications are scheduled on your device. Nothing is sent to our server for notifications and no remote (push) notifications are used.</p>
+<p>Prayer notifications are scheduled on your device; nothing is sent to our server for them. If you have allowed notifications, the app stores your device's notification token, platform, app version and language together with your installation ID on our server so that it can send you a single "A new update is available" notification when a new version is released in the store. Delivery goes through Expo and Apple/Google notification services. The token is used for this purpose only; no other notifications or ads are sent. If you turn notifications off, none arrive; deleting your installation data or account also deletes the token.</p>
 
 <h2>3. Account (optional)</h2>
 <p>You can sign in with Apple or Google. Signing in syncs your saved cities and preferences across your devices and links Pro to your account.</p>
