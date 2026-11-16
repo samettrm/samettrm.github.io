@@ -10,8 +10,8 @@
 <h2>Kısaca</h2>
 <div class="kutu"><p>MERGORIA <strong>girişsiz oynanır</strong>; oyun ilerlemeniz cihazınızda tutulur. Apple ya da Google ile giriş yaparsanız
 ilerlemeniz cihazlarınız arasında eşitlenmek üzere hesabınızla sunucumuzda saklanır. Oyunu iyileştirmek için rastgele bir kurulum
-kimliğine bağlı ürün kullanım verisi toplarız; IP adresiniz saklanmaz. Oyunda Google AdMob reklamları gösterilir; Reklamsız paket
-sahiplerine hiçbir reklam gösterilmez. Satın almaları Apple ve Google yürütür; kart bilgileriniz bize ulaşmaz. Verileriniz satılmaz.</p></div>
+kimliğine bağlı ürün kullanım verisi toplarız; IP adresiniz saklanmaz. Oyunda yalnız sizin isteğinizle açılan Google AdMob ödüllü
+reklamları vardır. Satın almaları Apple ve Google yürütür; kart bilgileriniz bize ulaşmaz. Verileriniz satılmaz.</p></div>
 
 <h2>1. Hesap (isteğe bağlı)</h2>
 <p>Oyunun tamamı hesapsız oynanır. Apple ya da Google ile giriş yaparsanız:</p>
@@ -39,10 +39,9 @@ sürümü ve derleme numarası, dağıtım kanalı, simülatör bilgisi ve bağl
 olaylara eklenmez.</p>
 
 <h2>4. Reklamlar (Google AdMob)</h2>
-<p>Oyunda Google'ın AdMob hizmetiyle reklam gösterilir: kasaba ekranının altında banner, sekme değiştirirken ya da bulmaca bölümünden
-sonra ara sıra tam ekran reklam, uygulamaya geri dönüşte açılış reklamı ve <strong>isterseniz</strong> +20 enerji ya da bir bulmaca
-güçlendiricisi karşılığında izlediğiniz ödüllü reklam. Öğretici bitmeden tam ekran reklam gösterilmez. <strong>Reklamsız</strong>
-paket sahiplerine hiçbir reklam gösterilmez.</p>
+<p>Oyunda yalnız Google'ın AdMob hizmetiyle sunulan <strong>ödüllü reklam</strong> vardır: reklam yalnız siz düğmeye bastığınızda
+açılır ve karşılığında +20 enerji ya da bir bulmaca güçlendiricisi kazanırsınız. Banner, ara reklam ya da açılış reklamı yoktur;
+oyun hiçbir zaman kendiliğinden reklam açmaz.</p>
 <p>Reklam göstermek, ölçmek ve kötüye kullanımı önlemek için Google Mobile Ads SDK'sı cihazınızdan doğrudan Google'a şunları gönderir:
 IP adresi (genel konumu tahmin etmek için), reklam etkileşimleri (gösterim, dokunma, video izleme), tanı bilgisi ve cihaz kimlikleri
 (Android'de reklam kimliği ve app set ID; iPhone ve iPad'de reklam kimliği yalnız izin verirseniz). Bu veriler sunucumuza gelmez;
@@ -55,10 +54,14 @@ Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklam istenmeden önce Goog
 kimliğini telefonunuzun Ayarlar → Google → Reklamlar bölümünden sıfırlayabilir ya da silebilirsiniz.</p>
 
 <h2>5. Satın almalar</h2>
-<p>Elmas paketleri, başlangıç paketi ve Reklamsız paket Apple App Store ya da Google Play üzerinden satın alınır; ödemeyi mağaza
+<p>Elmas paketleri ve başlangıç paketi Apple App Store ya da Google Play üzerinden satın alınır; ödemeyi mağaza
 tahsil eder ve <strong>kart bilgileriniz bize ulaşmaz</strong>. Bir paketin içeriği, mağazanın doğruladığı satın alma işleminden sonra
-verilir; aynı işlemin iki kez verilmemesi için işlem kimliği oyun kaydınızda (giriş yaptıysanız bulut kaydında) saklanır. Reklamsız
-hakkı her açılışta mağazadaki güncel satın alma bilginizden okunur.</p>
+verilir; aynı işlemin iki kez verilmemesi için işlem kimliği oyun kaydınızda (giriş yaptıysanız bulut kaydında) saklanır.</p>
+<h3>Güncelleme bildirimi</h3>
+<p>Oyunun yeni sürümü mağazada yayınlandığında size tek bir bildirim gönderebilmek için cihazınızın bildirim jetonu, dil tercihiniz ve
+kurulum kimliğiniz sunucumuzda saklanır. Bildirim, Expo aracılığıyla iPhone'da Apple'ın, Android'de Google Firebase'in bildirim
+hizmetinden iletilir. Bildirime izin vermediyseniz jeton alınmaz. Bu kanaldan kampanya ya da pazarlama bildirimi gönderilmez; jeton
+13 ay kullanılmazsa silinir.</p>
 
 <h2>6. Aktarım ve altyapı</h2>
 <p>Sunucumuz Cloudflare altyapısında (Workers ve D1) barındırılır; giriş Apple ve Google hizmetleriyle sağlanır; reklamlar Google

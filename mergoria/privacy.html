@@ -10,8 +10,8 @@
 <h2>In short</h2>
 <div class="kutu"><p>MERGORIA <strong>is played without an account</strong>; your progress is kept on your device. If you sign in with Apple
 or Google, your progress is stored on our server with your account so it can sync across your devices. To improve the game we collect
-product usage data tied to a random installation ID; your IP address is not stored. The game shows Google AdMob ads; owners of the No
-Ads pack see no ads at all. Purchases are processed by Apple and Google; your card details never reach us. Your data is not sold.</p></div>
+product usage data tied to a random installation ID; your IP address is not stored. The only ads in the game are Google AdMob rewarded
+ads that play when you choose. Purchases are processed by Apple and Google; your card details never reach us. Your data is not sold.</p></div>
 
 <h2>1. Account (optional)</h2>
 <p>The whole game can be played without an account. If you sign in with Apple or Google:</p>
@@ -37,10 +37,8 @@ or completing. Each event records the platform (iOS/Android), app version and bu
 events are linked to your account. Name, email, location and advertising ID are never added to these events.</p>
 
 <h2>4. Advertising (Google AdMob)</h2>
-<p>The game shows ads through Google AdMob: a banner at the bottom of the town screen, an occasional full-screen ad when switching tabs or
-after a puzzle level, an app-open ad when you return to the app, and a rewarded ad that you watch <strong>only if you choose to</strong>
-in exchange for +20 energy or a puzzle booster. No full-screen ads are shown before the tutorial ends. Owners of the <strong>No Ads</strong>
-pack see no ads at all.</p>
+<p>The only ads in the game are Google AdMob <strong>rewarded ads</strong>: an ad plays only when you tap the button, and you earn
++20 energy or a puzzle booster in return. There are no banners, interstitials or app-open ads; the game never opens an ad on its own.</p>
 <p>To show and measure ads and prevent abuse, the Google Mobile Ads SDK sends the following from your device directly to Google: IP address
 (to estimate general location), ad interactions (impressions, taps, video views), diagnostics and device identifiers (on Android the
 advertising ID and app set ID; on iPhone and iPad the advertising ID only if you allow it). This data does not reach our server; Google
@@ -52,10 +50,14 @@ Tracking. In the European Economic Area, the UK and Switzerland, Google's consen
 can reset or delete your advertising ID in Settings → Google → Ads.</p>
 
 <h2>5. Purchases</h2>
-<p>Gem packs, the starter pack and the No Ads pack are bought through the Apple App Store or Google Play; the store collects the payment and
+<p>Gem packs and the starter pack are bought through the Apple App Store or Google Play; the store collects the payment and
 <strong>your card details never reach us</strong>. A pack's content is granted after the store has verified the purchase; the transaction
-ID is kept in your save (in the cloud save if you are signed in) so the same purchase is never granted twice. The No Ads entitlement is
-read from the store's current purchase information on each launch.</p>
+ID is kept in your save (in the cloud save if you are signed in) so the same purchase is never granted twice.</p>
+<h3>Update notifications</h3>
+<p>To send you a single notification when a new version of the game is released, your device's notification token, language preference
+and installation ID are stored on our server. The notification is delivered through Expo via Apple's notification service on iPhone and
+Google Firebase on Android. If you have not allowed notifications, no token is collected. No promotional or marketing notifications are
+sent through this channel; the token is deleted if unused for 13 months.</p>
 
 <h2>6. Transfers and infrastructure</h2>
 <p>Our server runs on Cloudflare (Workers and D1); sign-in is provided by Apple and Google; ads are served by Google AdMob; purchases are
