@@ -4,16 +4,18 @@
 <header><div class="marka"><i></i><i></i><i></i><span>Yieldscope</span></div>
 <h1>Gizlilik Politikası</h1></header>
 <main>
-<p class="tarih">Yürürlük: 11.10.2026 · Veri sorumlusu: BUSATER YAZILIM A.Ş.</p>
+<p class="tarih">Yürürlük: 17.11.2026 · Veri sorumlusu: BUSATER YAZILIM A.Ş.</p>
 
 <h2>Kısaca</h2>
 <div class="kutu"><p>Bu uygulama, <strong>kendi AdMob yayıncı hesabınızın</strong> tahmini kazancını telefonunuzda gösterir. Raporlar Google'dan <strong>doğrudan cihazınıza</strong> gelir; bizim sunucumuzdan geçmez. Uygulama AdMob hesabınızda <strong>hiçbir değişiklik yapmaz</strong>; yalnız okur. Konum, kişi listesi, fotoğraf, mikrofon ve kamera <strong>kullanılmaz</strong>.</p></div>
 
-<h2>1. Google ile giriş</h2>
-<p>Giriş Google hesabınızla yapılır. Uygulama yalnız tek bir yetki ister:
+<h2>1. Giriş ve AdMob bağlantısı</h2>
+<p>Uygulama hesabınızı <strong>Apple ile giriş</strong> ya da <strong>Google ile giriş</strong> ile açarsınız.</p>
+<p><strong>Apple ile giriş:</strong> Apple'dan yalnız adınız ve e-posta adresiniz istenir; e-postanızı Apple'ın yönlendirme adresiyle gizleyebilirsiniz. Bu bilgiler <strong>yalnız cihazınızda</strong> saklanır, sunucumuza gönderilmez. Hesabınızı sildiğinizde uygulamanın Apple ile giriş bağı Apple üzerinden kaldırılır: bunun için Apple'ın o an verdiği tek kullanımlık kod sunucumuza gönderilir, yalnız Apple'a iletilir ve saklanmaz.</p>
+<p><strong>AdMob bağlantısı:</strong> Raporlar AdMob'dan okunduğu için AdMob hesabınızın bulunduğu Google hesabıyla bağlantı kurulur (Google ile girişte bu aynı adımda olur). Uygulama yalnız tek bir yetki ister:
 <code>https://www.googleapis.com/auth/admob.readonly</code> — AdMob raporlarınızı ve envanterinizi <strong>okuma</strong> izni. Yazma, değiştirme veya silme izni istenmez ve verilmez.</p>
 <p>Google'ın verdiği erişim ve yenileme jetonları <strong>yalnız cihazınızda</strong> saklanır; sunucumuza gönderilmez. Hesap adınız ve e-posta adresiniz uygulamada görünür, sunucumuzda saklanmaz.</p>
-<p>İzni dilediğiniz an geri alabilirsiniz: uygulamada <em>Hesap → Google erişimini kaldır</em>, ya da Google hesabınızın güvenlik ayarlarından.</p>
+<p>İzni dilediğiniz an geri alabilirsiniz: uygulamada <em>Hesap → Hesabı ve verileri sil</em>, ya da Google hesabınızın güvenlik ayarlarından.</p>
 
 <h2>2. AdMob verileri</h2>
 <p>Gösterilen tahmini kazanç, gösterim, tıklama, eCPM, reklam kaynakları ve reklam birimi bilgileri AdMob API'sinden alınır. Bu veriler <strong>sizin verinizdir</strong>; tarafımıza iletilmez, saklanmaz, üçüncü kişilerle paylaşılmaz, satılmaz.</p>
@@ -31,13 +33,13 @@
 <p>Uygulamayı geliştirebilmek için şu bilgiler sunucumuza gönderilir:</p>
 <ul>
   <li>rastgele üretilmiş <strong>kurulum kimliği</strong> (uygulama silinip kurulunca yenisi üretilir),</li>
-  <li>ürün olaylarının adı ve zamanı: ilk açılış, uygulama açılışı, giriş tamamlandı, demo başlatıldı, ilk rapor görüntülendi, satın alma ekranı açıldı/kapatıldı, plan seçildi, satın alma başladı/tamamlandı/iptal edildi/başarısız oldu, geri yükleme; olaya bağlı küçük ayrıntılar (plan türü, ekranı açan yer, ekranda kalma süresi, hata kodu),</li>
+  <li>ürün olaylarının adı ve zamanı: ilk açılış, uygulama açılışı, giriş tamamlandı (giriş yöntemi: Apple ya da Google), ilk rapor görüntülendi, mağaza değerlendirme penceresinin istenmesi, satın alma ekranı açıldı/kapatıldı, plan seçildi, satın alma başladı/tamamlandı/iptal edildi/başarısız oldu, geri yükleme; olaya bağlı küçük ayrıntılar (plan türü, ekranı açan yer, ekranda kalma süresi, hata kodu),</li>
   <li>platform (iOS/Android), uygulama sürümü ve derleme numarası, derleme türü, simülatör bilgisi,</li>
   <li>bağlantının geldiği <strong>ülke</strong> (iki harfli ülke kodu; <strong>IP adresi saklanmaz</strong>).</li>
 </ul>
 <p>AdMob tutarlarınız, uygulama adlarınız, e-posta adresiniz ve Google jetonlarınız bu olaylara <strong>eklenmez</strong>.</p>
 <p><strong>Sahiplik kontrolü:</strong> giriş yaptığınızda Google kimlik jetonunuz, hesabın uygulama sahibine ait olup olmadığını doğrulamak için sunucuya gönderilir ve doğrulamadan sonra <strong>saklanmaz</strong>. Sahip olmayan kullanıcıların bu sorgusu kayda geçirilmez.</p>
-<p><strong>Saklama:</strong> bu kayıtlar siz silene kadar saklanır; bugün sunucuda otomatik silme uygulanmamaktadır. <strong>Silme:</strong> <em>Hesap → Bu cihazın kullanım verilerini sil</em> ile bu kuruluma ait tüm olaylar ve kurulum kaydı sunucudan silinir.</p>
+<p><strong>Saklama:</strong> bu kayıtlar siz silene kadar saklanır; bugün sunucuda otomatik silme uygulanmamaktadır. <strong>Silme:</strong> <em>Hesap → Hesabı ve verileri sil</em> ile bu kuruluma ait tüm olaylar ve kurulum kaydı sunucudan silinir.</p>
 
 <h2>5. Reklamlar</h2>
 <p>Pro dışındaki kullanımda Google Mobile Ads ile reklam gösterilir (açılış, banner, geçiş ve isteğe bağlı ödüllü video). Google, reklam sunmak ve ölçmek için cihaz ve kullanım bilgileri işleyebilir (Android'de reklam kimliği dahil). Avrupa Birliği ve İngiltere'de ilk açılışta Google'ın onay formu (UMP) gösterilir; onayınızı <em>Hesap → Reklam gizlilik seçenekleri</em>'nden değiştirebilirsiniz. Reklamlar <strong>kişiselleştirilmemiş</strong> olarak istenir; bu nedenle iOS'ta izleme izni (ATT) sorulmaz.</p>
@@ -53,7 +55,7 @@
 <p>Uygulama AdMob yayıncılarına yöneliktir ve çocuklara yönelik değildir; bilerek 13 yaş altından veri toplamaz.</p>
 
 <h2>9. Haklarınız (KVKK m. 11 / GDPR)</h2>
-<p>Kişisel verilerinize erişme, düzeltme, silme, işlemeye itiraz etme ve veri taşınabilirliği haklarına sahipsiniz. Silme işlemini uygulama içinden <em>Hesap → Bu cihazın kullanım verilerini sil</em> ile kendiniz yapabilirsiniz. Diğer talepler için <a href="mailto:bsdigitalapp@gmail.com">bsdigitalapp@gmail.com</a> adresine yazabilirsiniz.</p>
+<p>Kişisel verilerinize erişme, düzeltme, silme, işlemeye itiraz etme ve veri taşınabilirliği haklarına sahipsiniz. Silme işlemini uygulama içinden <em>Hesap → Hesabı ve verileri sil</em> ile kendiniz yapabilirsiniz. Diğer talepler için <a href="mailto:bsdigitalapp@gmail.com">bsdigitalapp@gmail.com</a> adresine yazabilirsiniz.</p>
 
 <h2>10. Değişiklikler</h2>
 <p>Bu metin güncellenirse yürürlük tarihi değişir ve güncel sürüm bu adreste yayımlanır.</p>
